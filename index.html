@@ -21,30 +21,91 @@
     <!-- #### Start Here #### -->
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light shadow-lg">
         <div class="container">
             <a href="#" class="navbar-brand text-secondary">Education</a>
 
-            <ul class="navbar-nav">
-                <!-- Search Query Form -->
-                <li class="nav-item">
-                    <form action="#">
-                        <div class="input-group">
-                            <input type="search" name="search" id="" class="form-control"
-                                placeholder="Web Development, Android Development...">
-                            <div class="input-group-append">
-                                <button type="submit" name="searchBtn" class="btn btn-outline-secondary"><i
-                                        class="fa fa-search"></i></button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="main-navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <!-- Search Query Form -->
+                    <li class="nav-item">
+                        <form action="#">
+                            <div class="input-group">
+                                <input type="search" name="search" id="" class="form-control"
+                                    placeholder="Web Development, Android Development...">
+                                <div class="input-group-append">
+                                    <button type="submit" name="searchBtn" class="btn btn-outline-secondary"><i
+                                            class="fa fa-search"></i></button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </li>
-            </ul>
+                        </form>
+                    </li>
+
+                    <!-- signin -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Signin</a>
+                    </li>
+
+                    <!-- signup -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Signup</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Header Section -->
-    <header id="header" class="header"></header>
+    <header class="header">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+
+            <!-- carousel Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#header-carousel" data-slide-to="1"></li>
+                <li data-target="#header-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Carousel Code -->
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-img-1 active" data-interval="">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-md-block d-lg-block bg-dark-overlay p-3 rounded-lg">
+                            <h1 class="display-3">Get Top Quality Education From Our Top Educators</h1>
+                            <div class="mb-3">
+                                <a href="#" class="btn btn-primary">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-img-2" data-interval="">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-md-block d-lg-block bg-dark-overlay p-3 rounded-lg">
+                            <h1 class="display-3 text-left">Get Top Quality Education From Our Top Educators</h1>
+                            <div class="text-left mb-3">
+                                <a href="#" class="btn btn-warning">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-img-3" data-interval="">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-md-block d-lg-block bg-dark-overlay p-3 rounded-lg">
+                            <h1 class="display-3 text-right">Get Top Quality Education From Our Top Educators</h1>
+                            <p class="lead text-right">We Also Provide You Better Mentor For Guidnace And Support</p>
+                            <div class="text-right mb-3">
+                                <a href="#" class="btn btn-danger">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <!-- Section - 1 -->
     <section id="section-1"></section>

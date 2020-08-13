@@ -3,8 +3,35 @@
     padding: 0;
 }
 
+
 .header {
     width: 100%;
-    height: 100vh;
-    background: red;
+    height: 80vh;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 80vh;
+}
+
+.carousel-img-1 {
+    background: url(../assets/img/img-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-img-2 {
+    background: url(../assets/img/img-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-img-3 {
+    background: url(../assets/img/img-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-dark-overlay {
+    background: rgba(7, 7, 7, 0.657);
 }

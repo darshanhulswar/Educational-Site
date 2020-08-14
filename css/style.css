@@ -35,3 +35,9 @@
 .bg-dark-overlay {
     background: rgba(7, 7, 7, 0.657);
 }
+
+.features-section {
+    background: url(../assets/img/img-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}

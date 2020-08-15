@@ -9,6 +9,10 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
 
+    <!-- OwlCarousel  -->
+    <link rel="stylesheet" href="/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="/owl-carousel/css/owl.theme.default.css">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
 
@@ -21,7 +25,7 @@
     <!-- #### Start Here #### -->
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light shadow-lg">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
             <a href="#" class="navbar-brand text-secondary">Education</a>
 
@@ -30,19 +34,61 @@
             </button>
 
             <div id="main-navbar" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav  ml-auto">
                     <!-- Search Query Form -->
+                    <li class="nav-item mx-1">
+                        <!-- <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownmenubtn"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Categories
+                            </button>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownmenubtn">
+                                <a href="#arts" class="dropdown-item"></a>
+                                <a href="#business" class="dropdown-item"></a>
+                                <a href="#computerscience" class="dropdown-item"></a>
+                                <a href="#datascience" class="dropdown-item"></a>
+                                <a href="#informationtechnology" class="dropdown-item"></a>
+                                <a href="#health" class="dropdown-item"></a>
+                                <a href="#math" class="dropdown-item"></a>
+                                <a href="#kids" class="dropdown-item"></a>
+                            </div>
+                        </div> -->
+
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#arts">Arts</a>
+                                <a class="dropdown-item" href="#business">Bsiness</a>
+                                <a class="dropdown-item" href="#computerscience">Computer Science</a>
+                                <a class="dropdown-item" href="#datascience">Data Science</a>
+                                <a class="dropdown-item" href="#informationtechnology">Information Technology</a>
+                                <a class="dropdown-item" href="#health">Health</a>
+                                <a class="dropdown-item" href="#math">Math</a>
+                                <a class="dropdown-item" href="#kids">Kids</a>
+                            </div>
+                        </div>
+                    </li>
+
                     <li class="nav-item">
                         <form action="#">
                             <div class="input-group">
                                 <input type="search" name="search" id="" class="form-control"
-                                    placeholder="Web Development, Android Development...">
+                                    placeholder="Development...">
                                 <div class="input-group-append">
                                     <button type="submit" name="searchBtn" class="btn btn-outline-secondary"><i
                                             class="fa fa-search"></i></button>
                                 </div>
                             </div>
                         </form>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark"><span class="d-block">For Team</span></a>
                     </li>
 
                     <!-- signin -->
@@ -107,15 +153,44 @@
         </div>
     </header>
 
+    <section id="highlight" class="p-5 my-5 highlight">
+        <div class="container p-5">
+            <p class="display-4 text-center text-light">Transform your future as you want
+            </p>
+
+            <div class="row">
+                <div class="col-md-4 my-2">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <i class="fa fa-laptop fa-2x mr-3 text-light"></i>
+                        <p class="lead text-light">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 my-2">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <i class="fa fa-pencil fa-2x mr-3 text-light"></i>
+                        <p class="lead text-light">Education for all with diffent option to choose</p>
+                    </div>
+                </div>
+                <div class="col-md-4 my-2">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <i class="fa fa-shield fa-2x mr-3 text-light"></i>
+                        <p class="lead text-light">Earn High Valued Certification</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Section - 1 Top Categories -->
     <section id="section-1" class="bg-light p-5 my-5">
         <div class="container">
             <h1 class="display-3 text-center text-danger mb-5">Top Categories</h1>
 
             <div class="row shadow rounded-lg">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card my-3 shadow border-danger">
-                        <img src="assets/img/img-1.jpg" alt="" class="card-img-top">
+                        <img src="assets/course-images/datascience/bigdata.jfif" alt="" class="card-img-top">
 
                         <div class="card-body">
                             <h5 class="card-title">Data Science</h5>
@@ -125,9 +200,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card my-3 shadow border-danger">
-                        <img src="assets/img/img-1.jpg" alt="" class="card-img-top">
+                        <img src="assets/course-images/kids/arts.jfif" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Education for Kids</h5>
                             <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
@@ -136,23 +211,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card my-3 shadow border-danger">
-                        <img src="assets/img/img-1.jpg" alt="" class="card-img-top">
+                        <img src="assets/course-images/computer-science/html.jfif" alt="" class="card-img-top">
 
                         <div class="card-body">
-                            <h5 class="card-title">Swift Programming</h5>
-                            <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            </p>
-                            <a href="#" class="btn btn-danger">View More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card my-3 shadow border-danger">
-                        <img src="assets/img/img-1.jpg" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Android Development</h5>
+                            <h5 class="card-title">HTML</h5>
                             <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
                             </p>
                             <a href="#" class="btn btn-danger">View More</a>
@@ -164,15 +228,452 @@
     </section>
 
     <!-- Section - 2 -->
-    <section id="section-2" class="features-section my-4 p-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="container">
-                        <h1 class="display-4 text-right text-light">Various Features of Our Education</h1>
+    <section id="section-2" class="features-section my-4">
+        <div class="dark-overlay">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="container">
+                            <h1 class="display-4 text-right text-light">Various Features of Our Education</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="container">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-7"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="my-5">
+        <div class="container">
+            <h1 class="display-4">Top Categories for Learning <span></h1>
+            <p class="text-left">We offer education from basic to advanced so that you can get full understanding of the
+                core and advanced topics</p>
+            <div class="accordion" id="categories-inner">
+
+                <!-- Arts -->
+                <div class="card">
+                    <div class="card-header" id="arts-head">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#arts-desc">
+                                Arts<span><i class="fa fa-caret-down mx-2"></i></span>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="arts-desc" class="collapse show" aria-labelledby="arts-head"
+                        data-parent="#categories-inner">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="card">
+                    <div class="card-header" id="business-head">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#business-desc">
+                                Business<span><i class="fa fa-caret-down mx-2"></i></span>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="business-desc" class="collapse" aria-labelledby="business-head"
+                        data-parent="#categories-inner">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computer Science -->
+                <div class="card">
+                    <div class="card-header" id="computerscience-head">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#computerscience-desc">
+                                Computer Science<span><i class="fa fa-caret-down mx-2"></i></span>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="computerscience-desc" class="collapse" aria-labelledby="computerscience-head"
+                        data-parent="#categories-inner">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row shadow rounded-lg">
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/datascience/bigdata.jfif" alt=""
+                                                class="card-img-top">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">Data Science</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/kids/arts.jfif" alt="" class="card-img-top">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Education for Kids</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/computer-science/html.jfif" alt=""
+                                                class="card-img-top">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">HTML</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="card">
+                    <div class="card-header" id="datascience-head">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#datascience-desc">
+                                Data Science<span><i class="fa fa-caret-down mx-2"></i></span>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="datascience-desc" class="collapse" aria-labelledby="datascience-head"
+                        data-parent="#categories-inner">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row shadow rounded-lg">
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/datascience/bigdata.jfif" alt=""
+                                                class="card-img-top">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">Data Science</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/kids/arts.jfif" alt="" class="card-img-top">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Education for Kids</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/computer-science/html.jfif" alt=""
+                                                class="card-img-top">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">HTML</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Information Technology -->
+                <div class="card">
+                    <div class="card-header" id="it-head">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#it-desc">
+                                Information Technology<span><i class="fa fa-caret-down mx-2"></i></span>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="it-desc" class="collapse" aria-labelledby="it-head" data-parent="#categories-inner">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row shadow rounded-lg">
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/datascience/bigdata.jfif" alt=""
+                                                class="card-img-top">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">Data Science</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/kids/arts.jfif" alt="" class="card-img-top">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Education for Kids</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/computer-science/html.jfif" alt=""
+                                                class="card-img-top">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">HTML</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Health -->
+                <div class="card">
+                    <div class="card-header" id="health-head">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#health-desc">
+                                Computer Science<span><i class="fa fa-caret-down mx-2"></i></span>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="health-desc" class="collapse" aria-labelledby="health-head"
+                        data-parent="#categories-inner">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row shadow rounded-lg">
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/datascience/bigdata.jfif" alt=""
+                                                class="card-img-top">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">Data Science</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/kids/arts.jfif" alt="" class="card-img-top">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Education for Kids</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/computer-science/html.jfif" alt=""
+                                                class="card-img-top">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">HTML</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Math -->
+                <div class="card">
+                    <div class="card-header" id="math-head">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#math-desc">
+                                Maths<span><i class="fa fa-caret-down mx-2"></i></span>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="math-desc" class="collapse" aria-labelledby="math-head" data-parent="#categories-inner">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row shadow rounded-lg">
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/datascience/bigdata.jfif" alt=""
+                                                class="card-img-top">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">Data Science</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/kids/arts.jfif" alt="" class="card-img-top">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Education for Kids</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/computer-science/html.jfif" alt=""
+                                                class="card-img-top">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">HTML</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kids -->
+                <div class="card">
+                    <div class="card-header" id="kids-head">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#kids-desc">
+                                Kids<span><i class="fa fa-caret-down mx-2"></i></span>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="kids-desc" class="collapse" aria-labelledby="kids-head" data-parent="#categories-inner">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row shadow rounded-lg">
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/datascience/bigdata.jfif" alt=""
+                                                class="card-img-top">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">Data Science</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/kids/arts.jfif" alt="" class="card-img-top">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Education for Kids</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card my-3 shadow border-danger">
+                                            <img src="assets/course-images/computer-science/html.jfif" alt=""
+                                                class="card-img-top">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">HTML</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Recusandae
+                                                </p>
+                                                <a href="#" class="btn btn-danger">View More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -187,6 +688,9 @@
 
     <!-- JQuery required for bootstrap -->
     <script src="js/jquery/jquery.js"></script>
+
+    <!-- OwlCarousel JS -->
+    <script src="/owl-carousel/js/owl.carousel.js"></script>
 
     <!-- Bootstrap requires popper.js -->
     <script src="js/popper.js"></script>

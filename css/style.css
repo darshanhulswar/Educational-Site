@@ -60,6 +60,6 @@ html {
 }
 
 .card-img-top {
+    min-height: 13rem;
     max-height: 13rem;
 }
-

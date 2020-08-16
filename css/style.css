@@ -21,18 +21,21 @@ html {
     background: url(../assets/img/img-4.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .carousel-img-2 {
     background: url(../assets/img/img-5.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .carousel-img-3 {
     background: url(../assets/img/img-6.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bg-dark-overlay {

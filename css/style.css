@@ -9,7 +9,7 @@ html {
 
 .header {
     width: 100%;
-    height: 80vh;
+    height: 80vh; 
 }
 
 .carousel-item {
@@ -18,21 +18,18 @@ html {
 }
 
 .carousel-img-1 {
-    /* background: url(../assets/img/img-1.jpg); */
     background: url(../assets/img/img-4.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .carousel-img-2 {
-    /* background: url(../assets/img/img-2.jpg); */
     background: url(../assets/img/img-5.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .carousel-img-3 {
-    /* background: url(../assets/img/img-3.jpg); */
     background: url(../assets/img/img-6.jpg);
     background-position: center;
     background-size: cover;
@@ -58,11 +55,11 @@ html {
     width: 100%;
     height: 100%;
     background: rgb(145, 90, 3);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .card-img-top {
     min-height: 13rem;
     max-height: 13rem;
 }
+
+

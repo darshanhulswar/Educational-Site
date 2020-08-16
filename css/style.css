@@ -45,7 +45,7 @@ html {
 .features-section {
     background: url(../assets/img/learning.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .dark-overlay {
